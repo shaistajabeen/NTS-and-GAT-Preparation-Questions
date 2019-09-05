@@ -1,0 +1,526 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1727F8BD-5AF1-4570-999E-AE31B13A5E5D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCQs</RootNamespace>
+    <AssemblyName>MCQs</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BIOLOGY.aspx" />
+    <Content Include="BIOLOGY2.aspx" />
+    <Content Include="BioScience.aspx" />
+    <Content Include="BioScience2.aspx" />
+    <Content Include="BioScience3.aspx" />
+    <Content Include="BusinessAdministration.aspx" />
+    <Content Include="BusinessAdministration2.aspx" />
+    <Content Include="BusinessAdministration3.aspx" />
+    <Content Include="CHEMISTRY2.aspx" />
+    <Content Include="COMPUTER.aspx" />
+    <Content Include="COMPUTER2.aspx" />
+    <Content Include="ComputerScience.aspx" />
+    <Content Include="GAT-General1.aspx" />
+    <Content Include="GAT-General2.aspx" />
+    <Content Include="GAT-General3.aspx" />
+    <Content Include="GAT-General4.aspx" />
+    <Content Include="GAT-General5.aspx" />
+    <Content Include="GKTBIOSCIENCE.aspx" />
+    <Content Include="GKTBUSINESSADM.aspx" />
+    <Content Include="GKTMANAGEMENTSCI.aspx" />
+    <Content Include="GKTMECHANICALENG.aspx" />
+    <Content Include="GTKCOMPUTER.aspx" />
+    <Content Include="Images\field.PNG" />
+    <Content Include="Images\figure.PNG" />
+    <Content Include="Images\figure1.png" />
+    <Content Include="Images\figure2.png" />
+    <Content Include="Images\figure3.png" />
+    <Content Include="Images\ladder.PNG" />
+    <Content Include="Images\mRNA.png" />
+    <Content Include="Images\rings.PNG" />
+    <Content Include="Images\root.png" />
+    <Content Include="JavaScript1.js" />
+    <Content Include="ManagementScience.aspx" />
+    <Content Include="ManagementScience2.aspx" />
+    <Content Include="ManagementScience3.aspx" />
+    <Content Include="MATHEMATICS.aspx" />
+    <Content Include="CHEMISTRY.aspx" />
+    <Content Include="MATHEMATICS2.aspx" />
+    <Content Include="MechanicalEngineering.aspx" />
+    <Content Include="MechanicalEngineering2.aspx" />
+    <Content Include="Page1.aspx" />
+    <Content Include="NTS.aspx" />
+    <Content Include="NTStart.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="JavaScript.js" />
+    <Content Include="Page2.aspx" />
+    <Content Include="Page3.aspx" />
+    <Content Include="Page4.aspx" />
+    <Content Include="PHYSICS.aspx" />
+    <Content Include="PHYSICS2.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="StyleSheet2.css" />
+    <Content Include="SubjectKnowledgeGAT.aspx" />
+    <Content Include="TKBiology.aspx" />
+    <Content Include="TKChemistry.aspx" />
+    <Content Include="TKComputer.aspx" />
+    <Content Include="TKMaths.aspx" />
+    <Content Include="TKPhysics.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="SubjectKnowledgeNTS.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BIOLOGY.aspx.cs">
+      <DependentUpon>BIOLOGY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIOLOGY.aspx.designer.cs">
+      <DependentUpon>BIOLOGY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIOLOGY2.aspx.cs">
+      <DependentUpon>BIOLOGY2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIOLOGY2.aspx.designer.cs">
+      <DependentUpon>BIOLOGY2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BioScience.aspx.cs">
+      <DependentUpon>BioScience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BioScience.aspx.designer.cs">
+      <DependentUpon>BioScience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BioScience2.aspx.cs">
+      <DependentUpon>BioScience2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BioScience2.aspx.designer.cs">
+      <DependentUpon>BioScience2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BioScience3.aspx.cs">
+      <DependentUpon>BioScience3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BioScience3.aspx.designer.cs">
+      <DependentUpon>BioScience3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessAdministration.aspx.cs">
+      <DependentUpon>BusinessAdministration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAdministration.aspx.designer.cs">
+      <DependentUpon>BusinessAdministration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessAdministration2.aspx.cs">
+      <DependentUpon>BusinessAdministration2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAdministration2.aspx.designer.cs">
+      <DependentUpon>BusinessAdministration2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessAdministration3.aspx.cs">
+      <DependentUpon>BusinessAdministration3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAdministration3.aspx.designer.cs">
+      <DependentUpon>BusinessAdministration3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CHEMISTRY2.aspx.cs">
+      <DependentUpon>CHEMISTRY2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CHEMISTRY2.aspx.designer.cs">
+      <DependentUpon>CHEMISTRY2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COMPUTER.aspx.cs">
+      <DependentUpon>COMPUTER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COMPUTER.aspx.designer.cs">
+      <DependentUpon>COMPUTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COMPUTER2.aspx.cs">
+      <DependentUpon>COMPUTER2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COMPUTER2.aspx.designer.cs">
+      <DependentUpon>COMPUTER2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerScience.aspx.cs">
+      <DependentUpon>ComputerScience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComputerScience.aspx.designer.cs">
+      <DependentUpon>ComputerScience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GAT-General1.aspx.cs">
+      <DependentUpon>GAT-General1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GAT-General1.aspx.designer.cs">
+      <DependentUpon>GAT-General1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GAT-General2.aspx.cs">
+      <DependentUpon>GAT-General2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GAT-General2.aspx.designer.cs">
+      <DependentUpon>GAT-General2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GAT-General3.aspx.cs">
+      <DependentUpon>GAT-General3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GAT-General3.aspx.designer.cs">
+      <DependentUpon>GAT-General3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GAT-General4.aspx.cs">
+      <DependentUpon>GAT-General4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GAT-General4.aspx.designer.cs">
+      <DependentUpon>GAT-General4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GAT-General5.aspx.cs">
+      <DependentUpon>GAT-General5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GAT-General5.aspx.designer.cs">
+      <DependentUpon>GAT-General5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GKTBIOSCIENCE.aspx.cs">
+      <DependentUpon>GKTBIOSCIENCE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GKTBIOSCIENCE.aspx.designer.cs">
+      <DependentUpon>GKTBIOSCIENCE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GKTBUSINESSADM.aspx.cs">
+      <DependentUpon>GKTBUSINESSADM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GKTBUSINESSADM.aspx.designer.cs">
+      <DependentUpon>GKTBUSINESSADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GKTMANAGEMENTSCI.aspx.cs">
+      <DependentUpon>GKTMANAGEMENTSCI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GKTMANAGEMENTSCI.aspx.designer.cs">
+      <DependentUpon>GKTMANAGEMENTSCI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GKTMECHANICALENG.aspx.cs">
+      <DependentUpon>GKTMECHANICALENG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GKTMECHANICALENG.aspx.designer.cs">
+      <DependentUpon>GKTMECHANICALENG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GTKCOMPUTER.aspx.cs">
+      <DependentUpon>GTKCOMPUTER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GTKCOMPUTER.aspx.designer.cs">
+      <DependentUpon>GTKCOMPUTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementScience.aspx.cs">
+      <DependentUpon>ManagementScience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementScience.aspx.designer.cs">
+      <DependentUpon>ManagementScience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementScience2.aspx.cs">
+      <DependentUpon>ManagementScience2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementScience2.aspx.designer.cs">
+      <DependentUpon>ManagementScience2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementScience3.aspx.cs">
+      <DependentUpon>ManagementScience3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagementScience3.aspx.designer.cs">
+      <DependentUpon>ManagementScience3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MATHEMATICS.aspx.cs">
+      <DependentUpon>MATHEMATICS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MATHEMATICS.aspx.designer.cs">
+      <DependentUpon>MATHEMATICS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CHEMISTRY.aspx.cs">
+      <DependentUpon>CHEMISTRY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CHEMISTRY.aspx.designer.cs">
+      <DependentUpon>CHEMISTRY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MATHEMATICS2.aspx.cs">
+      <DependentUpon>MATHEMATICS2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MATHEMATICS2.aspx.designer.cs">
+      <DependentUpon>MATHEMATICS2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MechanicalEngineering.aspx.cs">
+      <DependentUpon>MechanicalEngineering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MechanicalEngineering.aspx.designer.cs">
+      <DependentUpon>MechanicalEngineering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MechanicalEngineering2.aspx.cs">
+      <DependentUpon>MechanicalEngineering2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MechanicalEngineering2.aspx.designer.cs">
+      <DependentUpon>MechanicalEngineering2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.aspx.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page1.aspx.designer.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTS.aspx.cs">
+      <DependentUpon>NTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NTS.aspx.designer.cs">
+      <DependentUpon>NTS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTStart.aspx.cs">
+      <DependentUpon>NTStart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NTStart.aspx.designer.cs">
+      <DependentUpon>NTStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Header&amp;Footer.Master.cs">
+      <DependentUpon>Header&amp;Footer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header&amp;Footer.Master.designer.cs">
+      <DependentUpon>Header&amp;Footer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page2.aspx.cs">
+      <DependentUpon>Page2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page2.aspx.designer.cs">
+      <DependentUpon>Page2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page3.aspx.cs">
+      <DependentUpon>Page3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page3.aspx.designer.cs">
+      <DependentUpon>Page3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page4.aspx.cs">
+      <DependentUpon>Page4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page4.aspx.designer.cs">
+      <DependentUpon>Page4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PHYSICS.aspx.cs">
+      <DependentUpon>PHYSICS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PHYSICS.aspx.designer.cs">
+      <DependentUpon>PHYSICS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PHYSICS2.aspx.cs">
+      <DependentUpon>PHYSICS2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PHYSICS2.aspx.designer.cs">
+      <DependentUpon>PHYSICS2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectKnowledgeGAT.aspx.cs">
+      <DependentUpon>SubjectKnowledgeGAT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubjectKnowledgeGAT.aspx.designer.cs">
+      <DependentUpon>SubjectKnowledgeGAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectKnowledgeNTS.aspx.cs">
+      <DependentUpon>SubjectKnowledgeNTS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubjectKnowledgeNTS.aspx.designer.cs">
+      <DependentUpon>SubjectKnowledgeNTS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TKBiology.aspx.cs">
+      <DependentUpon>TKBiology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TKBiology.aspx.designer.cs">
+      <DependentUpon>TKBiology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TKChemistry.aspx.cs">
+      <DependentUpon>TKChemistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TKChemistry.aspx.designer.cs">
+      <DependentUpon>TKChemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TKComputer.aspx.cs">
+      <DependentUpon>TKComputer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TKComputer.aspx.designer.cs">
+      <DependentUpon>TKComputer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TKMaths.aspx.cs">
+      <DependentUpon>TKMaths.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TKMaths.aspx.designer.cs">
+      <DependentUpon>TKMaths.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TKPhysics.aspx.cs">
+      <DependentUpon>TKPhysics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TKPhysics.aspx.designer.cs">
+      <DependentUpon>TKPhysics.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Header&amp;Footer.Master" />
+    <Content Include="Documents\gat_sample_paper.pdf" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GATData\" />
+    <Folder Include="Javascript\" />
+    <Folder Include="NTSData\" />
+    <Folder Include="Stylesheet\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50476</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50476/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

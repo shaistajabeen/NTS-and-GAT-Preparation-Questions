@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header&Footer.master.cs" Inherits="MCQs.Header_Footer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           <div class="header">
+  <h1>NAT NTS & GAT Preparation Questions</h1>
+   <script src="main.js"></script>
+</div>
+ 
+  
+<div class="topnav" id="myTopnav">
+  <a href="http://localhost:50476/Home.aspx">Home</a>
+  <a href="http://localhost:50476/Page1.aspx">NTS </a>
+  <a href="http://localhost:50476/GAT-General1.aspx">GAT</a>
+    <a href="http://localhost:50476/SubjectKnowledgeNTS.aspx">Subject Knowledge NTS</a><a href="http://localhost:50476/SubjectKnowledgeGAT.aspx">Subject Knowledge GAT</a>
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+
+  </a>
+  
+</div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      <div class="footer">
+  <h2>Footer</h2>
+</div>
+       </div>
+    </form>
+</body>
+</html>
